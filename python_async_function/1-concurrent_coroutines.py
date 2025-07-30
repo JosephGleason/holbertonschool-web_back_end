@@ -9,7 +9,7 @@ from importlib import import_module
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """Runs wait_random n times concurrently with the given max_delay.
 
     Args:
