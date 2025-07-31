@@ -6,7 +6,6 @@ of running async_comprehension in parallel.
 
 import asyncio
 import time
-from typing import Callable
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
