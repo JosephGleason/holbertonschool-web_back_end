@@ -12,8 +12,11 @@ index_range = __import__('0-simple_helper_function').index_range
 class Server:
     """Server class to paginate a database of popular baby names.
     """
-    DATA_FILE = os.path.join(os.path.dirname(__file__), "Popular_Baby_Names.csv")
-    
+    DATA_FILE = os.path.join(
+        os.path.dirname(__file__),
+        "Popular_Baby_Names.csv"
+    )
+
     def __init__(self):
         self.__dataset = None
 
@@ -33,8 +36,8 @@ class Server:
         Retrieve a specific page of the dataset.
 
         Args:
-            page (int): The page number to return (1-indexed). Must be a positive integer.
-            page_size (int): The number of items per page. Must be a positive integer.
+            page (int): The page number to return. Must be a positive
+            page_size (int): The number of items per page. Must be a positive
 
         Returns:
             List[List]: The rows of the dataset for the requested page.
